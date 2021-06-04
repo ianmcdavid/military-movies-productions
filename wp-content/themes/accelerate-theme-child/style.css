@@ -1,0 +1,493 @@
+/*
+Theme Name:   Accelerate Theme Child
+Theme URI:    http://example.com/accelerate-theme-child/
+Description:  Accelerate Child Theme - Accelerate
+Author:   	Ian McDavid
+Author URI:   https://portfolio.progresscreation.com
+Template: 	accelerate-theme
+Version:      3.0.1
+Tags:     	site-specific
+Text Domain:  accelerate-theme-child
+*/
+@font-face{ 
+	font-family: 'blackopsone-regular-webfont';
+	src: url('fonts/blackopsone-regular-webfont.eot');
+	src: url('fonts/blackopsone-regular-webfont.woff') format('woff'),
+	     url('fonts/blackopsone-regular-webfont.ttf') format('truetype'),
+	     url('fonts/blackopsone-regular-webfont.woff2') format('woff2');
+}
+
+/******General Styles*******/
+h2, h5, p {
+	text-shadow: -1px 1px 2px #404040,
+				  1px 1px 2px #404040,
+				  1px -1px 0 #404040,
+				  -1px -1px 0 #404040;
+}
+
+h2, h5 {
+	font-family: 'Palatino';
+	color: ghostwhite;
+	font-weight: bold;
+}
+
+h2 {
+	font-size: 2.3em;
+	font-size: 10.6vw;
+	
+}
+
+h5 {
+	font-size: 1.25em;
+	font-size: 5.8vw;
+	margin: 0;
+}
+
+p{
+	font-family: 'palatino';
+	color: ghostwhite;
+	font-size: 4.6vw;
+	margin: 0;
+	background-clip: content-box;
+	letter-spacing: .25px;
+	line-height: 1.5em;
+
+				  
+}
+
+#main-wrapper {
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: flex-start;
+}
+
+#main {
+	background-color: black;
+	margin-bottom: 0;
+}
+
+.shadow {
+	background-color: rgba(0, 0, 0, .3);
+}
+
+/*****Header Styles******/
+
+/************Title************/
+.mob-menu-logo-holder  {
+	font-family: 'blackopsone-regular-webfont';
+	font-size: 2em;
+	font-size: 9.2vw;
+	font-weight: lighter;
+	text-shadow: -1px 1px 2px #000,
+				  1px 1px 2px #000,
+				  1px -1px 0 #000,
+				  -1px -1px 0 #000;
+
+}
+
+#masthead {
+    background: none repeat scroll 0 0 #ffffff;
+}
+
+.page-header .primary-navigation ul li a, .page-header .top-logo .title {
+	color:black;
+	font-family: 'blackopsone-regular-webfont';
+}
+
+/********Hero Styles*********/
+.home-page {
+	height: auto;
+	padding: 0;
+	background: black;
+}
+
+.main-content {
+	padding: 0 0 1em 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	height: inherit;
+	background: url("img/mmp_hero.jpg") no-repeat scroll center / contain rgba(0, 0, 0, 0);
+	padding: 0;
+	height: 18.75em;
+}
+
+#primary.home-page.hero-content {
+	margin-bottom: 0;
+}
+
+
+a.button, a.button:link {
+	color: white;
+	font-weight: bold;
+}
+
+/********Lonesome Soldier Section Styles********/
+#ls-graphic {
+	height: auto;
+	width: 100%;
+	background: url("img/ls-graphic2.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+}
+
+#ls-graphic h2 {
+	font-weight: initial;
+    font-size: 2.3em;
+	font-size: 10.6vw;
+	margin: 0;
+	padding: 8% 0;
+	font-weight: bold;
+}
+
+
+/******About Section********/
+.center {
+	width: 100%;
+	text-align: center;
+}
+
+#purpose {
+	height: auto;
+	width: 100%;
+	background: url("img/purpose.jpg") no-repeat scroll center / cover rgba(0, 0, 0, 0);
+	text-align: center;
+}
+
+#purpose h2, #about-img-header h2, #squad h2 {
+	margin: 0;
+}
+
+#purpose h2, #about-img-header h2 {
+	padding: 10% 0;
+}
+
+#purpose p, #about-img-header p, #about-img-header p, #intro p, #squad p, #trailerp p, .blurbs p {
+	padding: 10% 5%;
+}
+
+#purpose p, #about-img-header p, #about-container p, #about-container2 p{
+	margin: 0;
+}
+
+#about-img-header {
+	height: auto;
+	width: 100%;
+	background: url("img/about.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+	text-align: center;
+}
+
+#trailerp {
+	background-color: black;
+	text-align: center;
+}
+
+#trailer {
+	height: auto;
+}
+
+
+
+
+/*****Desktop Make Fixed backgrounds********/
+@media only screen and (any-hover :hover) {
+	#about-img-header, #about-container2 {
+		background-attachment: fixed;
+	}
+
+}
+/******Squad Styles**********/
+#squad {
+	height: auto;
+	width: 100%;
+	background: url("img/squad.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0);
+	text-align: center;
+}
+
+#team h2 {
+	padding: 5% 0 0;
+}
+
+
+
+#squad h2 {
+	color: white;
+	font-weight: bold;
+	padding: 10%;
+}
+
+#squad-grid {
+	height: auto;
+	width: 100%;
+	background: url("img/constitution.jpg") repeat fixed left top / auto rgba(0, 0, 0, 0);
+}
+
+#squad-wrapper {
+	text-align: center;
+}
+
+#squad-wrapper h2 {
+	margin: 0;
+}
+
+#squad-wrapper p {
+	padding: 0 5% 5%;
+}
+
+
+
+.blurbs h5 {
+	padding: 2% 2% 4%;
+	font-size: 1.7em;
+    font-size: 7vw;
+}
+
+.blurbs p {
+	padding: 0 2% 2%;
+	text-align: left;
+}
+
+
+/**********Footer Styles*********/
+#mmp-footer {
+	width: 100%;
+	height: auto;
+	background: url("img/ls-graphic2.jpg") no-repeat scroll right center / cover rgba(0, 0, 0, 0); 
+}
+
+#call {
+	text-align: center;
+}
+
+#call p {
+	padding: 5% 5% 0;
+}
+
+#enlist-area {
+	text-align: center;
+}
+
+#foot-header {
+	padding: 1em 1.5em;
+	margin: 0;
+}
+
+#enlist {
+	display: block;
+	height: inherit;
+	width: inherit;
+	color: #ffffff;
+	background-color: #bf0a30;
+	line-height: 1em;
+	padding-top: .2em;
+	border: 2px solid #bf0a30;
+	border-right: 1px solid #bf0a30;
+}
+
+#social-media {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-around;
+	align-items: center;
+	margin: 0 25%;
+}
+
+#social-media p, #copyright p {
+	margin: 0;
+}
+
+#social-media p a img {
+	height: 2.5em;
+}
+
+#copyright {
+	text-align: center;
+}
+
+#copyright p {
+	color: white;
+	font-size: .875em;
+}
+
+/* 404 styles */
+
+#four {
+	background: url("img/404.jpg") no-repeat;
+	height: 600px;
+	color: #ffffff;
+}
+
+#four h1 {
+	margin: 0 0 0 20px;
+	font-size: 3em;
+}
+
+
+/**********Tablet Styling*********/
+
+@media (min-width: 640px) {
+	/************Title************/
+body {
+	display: flex;
+	justify-content: center;
+}
+
+#page {
+	width: 95%;
+}
+
+.mob-menu-logo-holder {
+	font-size: 7.2vw;
+}
+
+h2, #invest {
+	font-size: 3.9em;
+	font-size: 8.6vw;
+}
+
+p {
+	font-size: 2.6vw;
+}
+
+.main-content {
+	height: 34em;
+}
+
+#ls-graphic {
+	height: 10em;
+	display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#ls-graphic h2 {
+	font-size: 3.9em;
+	font-size: 8.6vw;
+}
+
+#purpose h2, #about-img-header h2 {
+	padding: 5% 0;
+}
+
+#trailerp p {
+	padding: 5% 0;
+}
+
+#trailer {
+	background-color: black;
+	display: flex;
+	justify-content: center;
+}
+
+#shrink-wrap {
+	height: auto;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+/***********Squad Styles Tablet********/
+#squad-wrapper {
+	display: flex;
+	flex-flow: row wrap;
+}
+#squad-grid figure {
+	width: calc(40%);
+	padding: 5%;
+}
+
+#squad-grid figure img {
+	width: 100%;
+}
+
+.blurbs {
+	width: calc(60%);
+}
+
+.blurbs h5, .blurbs p {
+	line-height: 1.2em;
+}
+
+.blurbs h5 {
+	padding: 8% 2% 4%;
+	font-size: 1.9em;
+    font-size: 4vw;
+}
+
+p {
+	font-size: 1.3em;
+	font-size: 2.9vw;
+}
+
+#copyright {
+	display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+}
+
+}
+
+/**********Desktop Styles**********/
+
+@media (min-width: 1024px) {
+	
+	/********Main Styles Desktop*********/
+	#page {
+		width: 89%;
+	}
+	
+	h2 {
+		font-size: 5em;
+		font-size: 6.6vw;
+	}
+
+	
+	p {
+		font-size: 2.05vw;
+	}
+
+
+	/*********Hero Styles Desktop********/
+	#ls-graphic h2 {
+		padding: 0;
+		line-height: 1.6em;
+		color: ghostwhite;
+		font-size: 5em;
+		font-size: 6.6vw;
+	}
+
+	.main-content {
+		height: 31em;
+    	margin-bottom: 6em;		
+	}
+
+	#ls-graphic {
+		align-items: center;
+	}
+
+	/**************About Area Styles**********/
+
+	#purpose p, #about-img-header p, #about-img-header p, #intro p, #squad p, #trailerp p, .blurbs p {
+		padding: 5%;
+	}
+
+	#trailerp p {
+		padding: 2%;
+	}
+	/*************Squad Area Styles***********/
+	#squad-grid figure {
+		width: calc(30%);
+	}
+
+	.blurbs {
+		width: calc(70%);
+	}
+
+	.blurbs h5 {
+		font-size: 1.8em;
+		font-size: 2.8vw;
+		padding: 2% 0 0;
+	}
+
+	#squad-wrapper p {
+		padding: 0 5% 0%;
+    	margin-bottom: 5%;
+	}
+}	
